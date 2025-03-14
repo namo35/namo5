@@ -1,43 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mobile UI</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="min-h-screen bg-white p-4">
-  <h1 class="text-lg font-bold mb-4">Menu</h1>
+import React from 'react';
 
-  <div class="flex space-x-4 mb-6">
-    <button class="bg-blue-200 px-6 py-2 rounded-full">+</button>
-    <button class="bg-blue-200 px-6 py-2 rounded-full"></button>
-    <button class="bg-blue-200 px-6 py-2 rounded-full"></button>
-    <button class="bg-blue-200 px-6 py-2 rounded-full">...</button>
-  </div>
+const MobileUI = () => {
+  return (
+    <div className="min-h-screen bg-white p-4">
+      <h1 className="text-lg font-bold mb-4">Menu</h1>
 
-  <div class="bg-blue-900 text-white p-6 rounded-2xl mb-6">
-    <p class="text-sm">friday</p>
-    <h2 class="text-4xl font-bold">10:33</h2>
-    <p class="text-sm">มี.ค.</p>
-  </div>
+      <div className="flex space-x-4 mb-6">
+        <button className="bg-blue-200 px-6 py-2 rounded-full">+</button>
+        <button className="bg-blue-200 px-6 py-2 rounded-full"></button>
+        <button className="bg-blue-200 px-6 py-2 rounded-full"></button>
+        <button className="bg-blue-200 px-6 py-2 rounded-full">...</button>
+      </div>
 
-  <div class="flex justify-center mb-6">
-    <svg width="200" height="200" viewBox="0 0 32 32" class="block">
-      <circle cx="16" cy="16" r="10" fill="none" stroke="#003f5c" stroke-width="10" stroke-dasharray="62.8 37.2"></circle>
-      <circle cx="16" cy="16" r="10" fill="none" stroke="#2f4b7c" stroke-width="10" stroke-dasharray="62.8 37.2" stroke-dashoffset="-62.8"></circle>
-      <circle cx="16" cy="16" r="10" fill="none" stroke="#665191" stroke-width="10" stroke-dasharray="62.8 37.2" stroke-dashoffset="-125.6"></circle>
-      <circle cx="16" cy="16" r="10" fill="none" stroke="#a05195" stroke-width="10" stroke-dasharray="62.8 37.2" stroke-dashoffset="-188.4"></circle>
-      <circle cx="16" cy="16" r="10" fill="none" stroke="#d45087" stroke-width="10" stroke-dasharray="62.8 37.2" stroke-dashoffset="-251.2"></circle>
-    </svg>
-  </div>
+      <div className="bg-blue-900 text-white p-6 rounded-2xl mb-6">
+        <p className="text-sm">friday</p>
+        <h2 className="text-4xl font-bold">10:33</h2>
+        <p className="text-sm">มี.ค.</p>
+      </div>
 
-  <div class="fixed bottom-0 left-0 right-0 bg-blue-900 p-4 flex justify-around text-white">
-    <span>🏠</span>
-    <span>📊</span>
-    <span>📅</span>
-    <span>📄</span>
-  </div>
+      <div className="flex justify-center mb-6">
+        <svg width="200" height="200" viewBox="0 0 32 32" className="block">
+          <circle cx="16" cy="16" r="10" fill="none" stroke="#003f5c" strokeWidth="10" strokeDasharray="62.8 37.2"></circle>
+          <circle cx="16" cy="16" r="10" fill="none" stroke="#2f4b7c" strokeWidth="10" strokeDasharray="62.8 37.2" strokeDashoffset="-62.8"></circle>
+          <circle cx="16" cy="16" r="10" fill="none" stroke="#665191" strokeWidth="10" strokeDasharray="62.8 37.2" strokeDashoffset="-125.6"></circle>
+          <circle cx="16" cy="16" r="10" fill="none" stroke="#a05195" strokeWidth="10" strokeDasharray="62.8 37.2" strokeDashoffset="-188.4"></circle>
+          <circle cx="16" cy="16" r="10" fill="none" stroke="#d45087" strokeWidth="10" strokeDasharray="62.8 37.2" strokeDashoffset="-251.2"></circle>
+        </svg>
+      </div>
 
-</body>
-</html>
+      <div className="fixed bottom-0 left-0 right-0 bg-blue-900 p-4 flex justify-around text-white">
+        <span>🏠</span>
+        <span>📊</span>
+        <span>📅</span>
+        <span>📄</span>
+      </div>
+    </div>
+  );
+};
+
+export default MobileUI;
